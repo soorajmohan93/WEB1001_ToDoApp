@@ -1,0 +1,25 @@
+﻿
+@model ToDoApplication.Models.ToDos
+@{
+    bool isCompleted = (bool)Model.IsCompleted;
+}
+
+
+
+@if (isCompleted)
+{
+    <section class="toDo_Card">
+        <span class="Desc">@Model.Description</span>
+        <span class="compl_Date">(Completed On:@Model.CompletedDate)</span>
+    </section>
+}
+
+else
+{
+    <section class="inc_Card">
+        <span class="Desc">@Model.Description</span>
+        <span class="compl_Date">Not Completed</span>
+    </section>
+    
+}
+

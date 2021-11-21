@@ -1,0 +1,21 @@
+﻿
+.toDo_Card {
+    width: 50rem;
+    border-radius: 0.2em;
+    background: linear-gradient(to right, #dcedc8, #ffffff);
+}
+
+.inc_Card {
+    width: 50rem;
+    border-radius: 0.2em;
+    background: linear-gradient(to right, #ff7961, #ffffff);
+}
+
+.Desc {
+    font-weight: bold;
+    font-size: large;
+}
+
+.compl_Date {
+    font-size: medium;
+}

@@ -1,20 +1,38 @@
 ﻿<Properties StartupConfiguration="{E429BAAC-452B-4829-B7CB-4D36EB406112}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoApplication/Models/ToDos.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoApplication/Migrations/20211121202325_First_Migration.cs">
     <Files>
-      <File FileName="ToDoApplication/Models/ToDos.cs" Line="1" Column="1" />
+      <File FileName="ToDoApplication/Models/ToDos.cs" Line="19" Column="25" />
+      <File FileName="ToDoApplication/Data/ToDoApplicationContext.cs" Line="10" Column="40" />
+      <File FileName="ToDoApplication/Pages/Index.cshtml.cs" Line="27" Column="16" />
+      <File FileName="ToDoApplication/Pages/Index.cshtml" Line="29" Column="1" />
+      <File FileName="ToDoApplication/Pages/Privacy.cshtml" Line="1" Column="1" />
+      <File FileName="ToDoApplication/Migrations/20211121191203_First Migration.cs" Line="19" Column="19" />
+      <File FileName="ToDoApplication/Pages/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="ToDoApplication/Pages/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="ToDoApplication/Program.cs" Line="16" Column="1" />
+      <File FileName="ToDoApplication/Pages/Error.cshtml" Line="1" Column="1" />
+      <File FileName="ToDoApplication/Migrations/20211121201154_First Migration.cs" Line="1" Column="1" />
+      <File FileName="ToDoApplication/Migrations/20211121202325_First_Migration.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ToDoApplication" expanded="True">
             <Node name="ToDoApplication" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="ToDos.cs" selected="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="20211121202325_First_Migration.cs" selected="True" />
               </Node>
-              <Node name="Pages" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Index.cshtml" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -24,5 +42,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ToDoApplication PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.ToDoApplication PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>

@@ -5,6 +5,32 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">To-Do Application</h1>
 </div>
+
+
+
+
+<form asp-page="Index" method="post">
+    <div>
+        <label asp-for="toDoEntry.Description">
+        </label>
+        <input asp-for="toDoEntry.Description" />
+        <span asp-validation-for="toDoEntry.Description"></span>
+    </div>
+    <div>
+        <label>Is this Completed?</label>
+        <input asp-for="toDoEntry.IsCompleted" />
+    </div>
+    <input type="submit" value="Submit" />
+</form>
+
+<hr />
+
+@if (Model.toDo.Count != 0)
+{
+    @foreach (ToDoApplication.Models.ToDos todo in Model.toDo)
+    {
+        <partial name="_toDoElement" model="todo" />
+    }
+}
