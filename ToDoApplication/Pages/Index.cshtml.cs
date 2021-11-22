@@ -14,7 +14,6 @@ namespace ToDoApplication.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
-        //public ToDoApplicationContext db = new ToDoApplicationContext();
         public readonly ToDoApplicationContext db;
 
         public List<ToDos> toDo { get; set; }

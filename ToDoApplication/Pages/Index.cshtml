@@ -10,25 +10,8 @@
 
 
 
-
-<form asp-page="Index" method="post">
-    <div>
-        <label asp-for="toDoEntry.Description">
-        </label>
-        <input asp-for="toDoEntry.Description" />
-        <span asp-validation-for="toDoEntry.Description"></span>
-    </div>
-    <div>
-        <label>Is this Completed?</label>
-        <input asp-for="toDoEntry.IsCompleted" />
-    </div>
-    <input type="submit" value="Submit" />
-</form>
-
-<hr />
-
 <div class="text-center">
-    <h3>Incomplete To-Dos</h3>
+    <h3>Incomplete To-Do</h3>
 </div>
 @if (Model.toDo.Count != 0)
 {
@@ -37,3 +20,25 @@
         <partial name="_toDoElement" model="todo" />
     }
 }
+
+<hr />
+
+<section class="add">
+    <div class="text-center">
+        <h6>Add a To-Do Here</h6>
+    </div>
+    <form asp-page="Index" method="post">
+        <div>
+            <label asp-for="toDoEntry.Description">
+            </label>
+            <input asp-for="toDoEntry.Description" />
+            <span asp-validation-for="toDoEntry.Description"></span>
+        </div>
+        <div>
+            <label>Is this Completed?</label>
+            <input asp-for="toDoEntry.IsCompleted" />
+        </div>
+        <input type="submit" value="Add" />
+    </form>
+</section>
+

@@ -209,3 +209,4 @@
 /Users/soorajmohan/Documents/GitHub/WEB1001_ToDoApp/ToDoApplication/obj/Debug/net5.0/Razor/Pages/ToDosPage/Details.cshtml.g.cs
 /Users/soorajmohan/Documents/GitHub/WEB1001_ToDoApp/ToDoApplication/obj/Debug/net5.0/Razor/Pages/ToDosPage/Edit.cshtml.g.cs
 /Users/soorajmohan/Documents/GitHub/WEB1001_ToDoApp/ToDoApplication/obj/Debug/net5.0/Razor/Pages/ToDosPage/Index.cshtml.g.cs
+/Users/soorajmohan/Documents/GitHub/WEB1001_ToDoApp/ToDoApplication/obj/Debug/net5.0/Razor/Pages/DisplayToDos.cshtml.g.cs

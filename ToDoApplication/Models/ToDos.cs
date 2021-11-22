@@ -14,6 +14,7 @@ namespace ToDoApplication.Models
         [StringLength(256, MinimumLength = 5)]
         public string Description { get; set; }
 
+        [Display(Name = "Is this Completed?", Description = "Is this Completed?")]
         public bool IsCompleted { get; set; }
 
         public DateTime? CompletedDate { get; set; }
