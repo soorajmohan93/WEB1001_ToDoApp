@@ -3,3 +3,9 @@
     border-radius: 0.2em;
     border: 1px solid black;
 }
+
+.message {
+    font-size: small;
+    font-weight: bold;
+    color: red;
+}

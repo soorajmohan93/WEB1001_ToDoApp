@@ -44,7 +44,7 @@ namespace ToDoApplication.Pages
                 db.ToDo.Add(toDoEntry);
                 db.SaveChanges();
             }
-            toDo = db.ToDo.ToList();
+            toDo = db.ToDo.Where(b => b.IsCompleted == false).ToList();
         }
     }
 }

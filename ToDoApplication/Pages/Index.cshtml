@@ -10,11 +10,12 @@
 
 
 
-<div class="text-center">
-    <h3>Incomplete To-Do</h3>
-</div>
+
 @if (Model.toDo.Count != 0)
 {
+    <div class="text-center">
+        <h3>Incomplete To-Do</h3>
+    </div>
     @foreach (ToDoApplication.Models.ToDos todo in Model.toDo)
     {
         <partial name="_toDoElement" model="todo" />
@@ -32,13 +33,13 @@
             <label asp-for="toDoEntry.Description">
             </label>
             <input asp-for="toDoEntry.Description" />
-            <span asp-validation-for="toDoEntry.Description"></span>
+            <span class="message" asp-validation-for="toDoEntry.Description"></span>
         </div>
         <div>
             <label>Is this Completed?</label>
             <input asp-for="toDoEntry.IsCompleted" />
         </div>
-        <input type="submit" value="Add" />
+        <input type="submit" value="Add this To-Do" />
     </form>
 </section>
 
