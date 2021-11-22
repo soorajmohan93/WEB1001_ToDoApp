@@ -14,23 +14,24 @@ namespace ToDoApplication.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
-        public ToDoApplicationContext db = new ToDoApplicationContext();
+        //public ToDoApplicationContext db = new ToDoApplicationContext();
+        public readonly ToDoApplicationContext db;
 
         public List<ToDos> toDo { get; set; }
 
         [FromForm]
         public ToDos toDoEntry { get; set; }
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel(ILogger<IndexModel> logger, ToDoApplicationContext dbContext)
         {
             _logger = logger;
-            
+            db = dbContext;   
 
         }
 
         public void OnGet()
         {
-            toDo = db.ToDo.ToList();
+            toDo = db.ToDo.Where(b => b.IsCompleted == false).ToList();
         }
 
         public void OnPost()

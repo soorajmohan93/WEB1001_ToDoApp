@@ -11,9 +11,14 @@ namespace ToDoApplication.Data
     {
         public DbSet<ToDos> ToDo { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public ToDoApplicationContext(DbContextOptions<ToDoApplicationContext> options)
+            : base(options)
         {
-            optionsBuilder.UseSqlite(@"Data Source=/Users/soorajmohan/Desktop/sql.db;");
         }
+
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlite(@"Data Source=/Users/soorajmohan/Desktop/sql.db;");
+        //}
     }
 }

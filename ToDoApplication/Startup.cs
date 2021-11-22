@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ToDoApplication.Data;
+using Microsoft.EntityFrameworkCore;
+using ToDoApplication.Areas;
 
 namespace ToDoApplication
 {
@@ -23,6 +26,10 @@ namespace ToDoApplication
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ToDoApplicationContext>(options =>
+            {
+                options.UseSqlite(@"name=ConnectionStrings:DB");
+            });
             services.AddRazorPages();
         }
 

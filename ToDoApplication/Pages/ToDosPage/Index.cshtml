@@ -1,0 +1,49 @@
+@page
+@model ToDoApplication.Areas.Admin.Pages.ToDosPage.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+@*<p>
+    <a asp-page="Create">Create New</a>
+</p>*@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ToDos[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ToDos[0].IsCompleted)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ToDos[0].CompletedDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.ToDos) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsCompleted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompletedDate)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ToDosId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ToDosId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ToDosId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
