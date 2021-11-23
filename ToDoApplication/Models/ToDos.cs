@@ -2,6 +2,12 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
+//This is the model used by the Todo application.
+//ToDosId is the primary key to identify each todo entry
+//Description is the To-Do text
+//IsCompleted is boolean which marks the to-do is completed or not
+//CompletedDate is given the date and time when the IsCompleted is checked yes
+
 namespace ToDoApplication.Models
 {
     

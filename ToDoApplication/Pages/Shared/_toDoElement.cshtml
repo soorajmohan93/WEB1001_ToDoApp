@@ -1,4 +1,5 @@
-﻿
+﻿@*This is partial for the to-do list. Its styled based on the check of isCompleted value*@
+
 @model ToDoApplication.Models.ToDos
 @{
     bool isCompleted = (bool)Model.IsCompleted;
@@ -10,7 +11,7 @@
 {
     <section class="toDo_Card">
         <span class="Desc">@Model.Description</span>
-        <span class="compl_Date">(Completed On:@Model.CompletedDate)</span>
+        <span class="compl_Date">(Completed On: @Model.CompletedDate)</span>
     </section>
 }
 
@@ -18,7 +19,7 @@ else
 {
     <section class="inc_Card">
         <span class="Desc">@Model.Description</span>
-        <span class="compl_Date">Not Completed</span>
+        <span class="compl_Date"> (Not Completed)</span>
     </section>
     
 }

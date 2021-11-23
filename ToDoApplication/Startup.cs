@@ -28,6 +28,7 @@ namespace ToDoApplication
         {
             services.AddDbContext<ToDoApplicationContext>(options =>
             {
+                //Since I use a mac, I used Sqlite connection String
                 options.UseSqlite(@"name=ConnectionStrings:DB");
             });
             services.AddRazorPages();

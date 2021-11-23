@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
+//This is the migration generated using NuGet Package Manager console. It contains migration of ToDos class Model
 namespace ToDoApplication.Migrations
 {
     public partial class First_Migration : Migration

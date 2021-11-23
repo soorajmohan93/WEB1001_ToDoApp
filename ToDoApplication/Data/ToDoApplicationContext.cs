@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using ToDoApplication.Models;
 
-
+// This class is for the DataBase Context. The connection string for DB context is defined in Startup.cs
 
 
 namespace ToDoApplication.Data
@@ -16,9 +16,5 @@ namespace ToDoApplication.Data
         {
         }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlite(@"Data Source=/Users/soorajmohan/Desktop/sql.db;");
-        //}
     }
 }

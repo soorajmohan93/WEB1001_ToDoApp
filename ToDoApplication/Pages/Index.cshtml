@@ -1,4 +1,6 @@
-﻿@page
+﻿@*_toDoElements partial is used to display the to-do. The home page dispalys only the incomplete To-Dos*@
+
+@page
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -23,6 +25,8 @@
 }
 
 <hr />
+
+@*The below code is for creating a To-do Entry using inline form.*@
 
 <section class="add">
     <div class="text-center">

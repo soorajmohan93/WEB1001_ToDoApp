@@ -50,9 +50,14 @@ namespace ToDoApplication.Areas.Admin.Pages.ToDosPage
 
             _context.Attach(ToDos).State = EntityState.Modified;
 
+            //The below code gives the CompletedDate the current date and time if IsCompleted is marked true
             if (ToDos.IsCompleted)
             {
                 ToDos.CompletedDate = DateTime.Now;
+            }
+            else
+            {
+                ToDos.CompletedDate = null;
             }
 
             try

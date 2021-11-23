@@ -1,9 +1,12 @@
-﻿.add {
-    width: 20rem;
+﻿/*Styling for border for home page add new to-do section box*/
+
+.add {
+    width: 27rem;
     border-radius: 0.2em;
     border: 1px solid black;
 }
 
+/*Styling for the validation message for input*/
 .message {
     font-size: small;
     font-weight: bold;

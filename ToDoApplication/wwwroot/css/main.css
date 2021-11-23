@@ -1,21 +1,24 @@
-﻿
+﻿/*Styling for completed To-Do entry*/
 .toDo_Card {
     width: 50rem;
     border-radius: 0.2em;
     background: linear-gradient(to right, #dcedc8, #ffffff);
 }
 
+/*Styling for incomplete To-Do entry*/
 .inc_Card {
     width: 50rem;
     border-radius: 0.2em;
     background: linear-gradient(to right, #ff7961, #ffffff);
 }
 
+/*Styling for desciption within the to-do displayed*/
 .Desc {
     font-weight: bold;
     font-size: large;
 }
 
+/*Styling for completed date in the to-do displayed */
 .compl_Date {
     font-size: medium;
 }

@@ -8,6 +8,8 @@ using Microsoft.Extensions.Logging;
 using ToDoApplication.Data;
 using ToDoApplication.Models;
 
+//This class OnGet method lets the view display all the records in the database
+
 namespace ToDoApplication.Pages
 {
     public class DisplayToDosModel : PageModel
